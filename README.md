@@ -58,7 +58,7 @@ To load namespace and refer 3 symbols, renaming one of them:
 
 To load a namespace and alias it in the current namespace:
 
-    (need clojure.contrib.io :as io)
+    (need [clojure.contrib.io :as io])
 
 
 More
