@@ -63,6 +63,10 @@ To load a namespace and alias it in the current namespace:
 
 More
 ----
+
+`need` does not support prefix lists because they are too confusing
+when combined with vectors of symbols and make it hard to do
+search-and-replace on namespace names.
             
 `need*` is a function that behaves like `need` but evaluates its arguments.
 
