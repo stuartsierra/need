@@ -35,7 +35,7 @@ fundamentally different operations and should not be conflated.
 Examples
 --------
 
-To load namespace without referring any symbols:
+To load a namespace without referring any symbols:
 
     (need clojure.contrib.io)
 
@@ -51,7 +51,8 @@ To load a namespace and refer all symbols except one:
 
     (need [clojure.contrib.io :exclude [spit]])
 
-To load namespace and refer 3 symbols, renaming one of them:
+To load a namespace and refer 3 symbols, renaming one of them.  The
+`:rename` map is like `{original-name new-name}`.
 
     (need [clojure.contrib.io reader writer
              :rename {spit put-file}])
