@@ -88,4 +88,4 @@
        to create an alias for the namespace name.
 "
   [& args]
-  (apply need* args))
+  `(apply need* '~args))
